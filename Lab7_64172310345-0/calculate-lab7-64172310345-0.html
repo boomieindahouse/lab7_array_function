@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate</title>
+  </head>
+  <style>
+    body {
+      margin: 4cm 8cm 0px 8cm;
+    }
+    .boxcal {
+      text-align: center;
+      background-color: lightpink;
+    }
+    .headbar {
+      background-color: lightpink;
+    }
+    .texthead {
+      margin-bottom: 0px;
+      /* background-color: aquamarine; */
+    }
+    .solution {
+      background-color: blue;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .number1 {
+      background-color: darksalmon;
+      width: 35%;
+    }
+    .operator {
+      background-color: plum;
+      /* margin-top: 10px; */
+      padding-top: 10px;
+      padding-right: 3cm;
+      /* display: flex;
+      flex-direction: column; */
+      text-align:left;
+      width: 30%;
+    }
+    .number2{
+      background-color: darksalmon;
+      width: 35%;
+    }
+    .function{
+        background-color: lightpink;
+        /* display: flex; */
+        margin-left: 2cm;
+        text-align: left;
+    }
+    .bt{
+        background-color: lemonchiffon;
+        /* margin-top: 1cm;
+        margin-bottom: 1cm; */
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+  </style>
+  <body>
+    <div class="bigbox">
+      <div class="boxcal">
+        <div class="headbar">
+          <h1 class="texthead">โปรแกรมเครื่องคิดเลข</h1>
+        </div>
+        <form method="get" action="result-lab7-64172310345-0.php">
+          <div class="solution">
+            <div class="number1">
+              <p style="margin: 7px 2px 0px 2px">ตัวเลขตัวที่ 1:</p>
+              <input style="margin: 0px 4px 60px 4px" type="number" name="number1" required />
+            </div>
+            <div class="operator">
+              <input type="radio" name="operator" value="+" required/> <label>บวก(+)</label><br>
+              <input type="radio" name="operator" value="-" required/> <label>ลบ(-)</label><br>
+              <input type="radio" name="operator" value="*" required/> <label>คูณ(*)</label><br>
+              <input type="radio" name="operator" value="/" required/> <label>หาร(/)</label>
+            </div>
+            <div class="number2">
+                <p style="margin: 7px 2px 0px 2px">ตัวเลขตัวที่ 2:</p>
+                <input style="margin: 0px 4px 60px 4px" type="number" name="number2" required />
+              </div>
+          </div>
+          <div class="function">
+              <input type="radio" name="chack" value="Sort" required/> <label>เรียงตัวเลข</label><br>
+              <input type="radio" name="chack" value="Nonsort" required/> <label>ไม่เรียงตัวเลข</label><br>
+          </div>
+          <div class="bt">
+            <input type="submit" name="cal" value="ดูผลลัพธ์">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
